@@ -1,0 +1,65 @@
+#drawer {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    background-color: rgba(0,0,0,.777);
+    z-index: 9;
+        transition-delay: .15s;
+  }
+
+  .drawer-navigation {
+    padding: 10px 15px;
+    background: #fff;
+    height: 100%;
+    margin-top: 0px;
+    max-height: calc(100% - 0px);
+    transform: translateX(-300px);
+    width: 300px;
+  }
+
+  .drawer-icon__close {
+    color: rgba(0,0,0,.87);
+    font-size: 15px;
+    cursor: pointer;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .drawer-header{
+    padding: 10px 0;
+    border-bottom: 1px solid #f3f3f3;
+    border-top: 1px solid #f3f3f3;
+
+    &__user-panel {
+      margin-bottom: 10px;
+    }
+
+    &__user-panel a,span{
+      color: rgba(0,0,0,.87);
+    }
+
+    &__main-navigation {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+    }
+    &__main-navigation li{
+      padding: 3px 0;
+      margin-bottom: 3px;
+    }
+    &__main-navigation li i{
+      color: rgba(0,0,0,.87);
+      margin-right: 3px;
+    }
+
+    &__main-navigation a {
+      cursor: pointer;
+      text-decoration: none;
+      color: rgba(0,0,0,.87);
+    }
+
+  }

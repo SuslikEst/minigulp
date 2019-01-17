@@ -1,0 +1,142 @@
+/* Layout Styles */
+.admin-intro-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    color: #000;
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12);
+    margin-bottom: 25px;
+    margin-top: 25px;
+
+    strong {
+        font-size: 22px;
+    }
+}
+
+.admin-page {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.admin-page-body {
+    max-width: 90%;
+    align-self: center;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.admin-content {
+    color: rgba(0, 0, 0, .87);
+    padding-left: 20px;
+    padding-top: 0;
+}
+
+.admin-right-sidebar,
+.admin-left-sidebar {}
+
+.admin-left-sidebar {
+    order: -1;
+}
+
+.admin-left-sidebar .category .category-header {
+    padding: 7px;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+    background-color: #060606;
+}
+
+.admin-right-sidebar .category .category-header {
+    padding: 7px;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+    background-color: #060606;
+}
+
+.admin-left-sidebar .category {
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.admin-left-sidebar .category-navigation {
+    padding: 7px;
+}
+
+.admin-left-sidebar .category-navigation__list-child {
+    margin-left: 15px;
+}
+
+.admin-left-sidebar .category-navigation__link-parent {
+    margin-bottom: 5px;
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.admin-left-sidebar .category-navigation__link-child {
+    margin-bottom: 5px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.admin-left-sidebar .category .category-navigation ul li a {
+    color: rgba(0, 0, 0, .87);
+}
+
+.admin-left-sidebar .category i {
+    font-size: 11px;
+}
+
+.admin-right-sidebar {
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12);
+}
+
+.admin-header {
+    flex: none;
+    height: 50px;
+}
+
+.admin-header .admin-header-panel .fa-bars {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.admin-header-panel {
+    display: flex;
+    position: fixed;
+    background-color: #060606;
+    width: 100%;
+    top: 0;
+    height: 50px;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
+}
+
+.admin-footer {
+    flex: none;
+    background-color: #060606;
+    color: #fff;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
+    padding: 20px;
+}
+
+.admin-footer {
+    margin-top: 25px;
+}
+
+/* Layout responsive */
+@media all and (min-width: 940px) {
+    .admin-page-body {
+        flex-direction: row;
+    }
+
+    .admin-content {
+        flex: 1;
+    }
+
+    .admin-right-sidebar,
+    .admin-left-sidebar {
+        flex: 0 0 300px;
+    }
+}
